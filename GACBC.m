@@ -19,14 +19,14 @@ close all;
 % =========================================================================
 
 % PD gains (fixed throughout the run)
-ctrl.Kd = 1;
-ctrl.Kp = 1;
+ctrl.Kd = 1.0;
+ctrl.Kp = 1.0;
 
 % Duffing oscillator:  m*x'' + c*x' + k*x + k3*x^3 = u(t)
-sys.m  = 1;
+sys.m  = 1.0;
 sys.c  = 0.05;
-sys.k  = 1;
-sys.k3 = 1;
+sys.k  = 1.0;
+sys.k3 = 1.0;
 
 % Target force amplitude and number of LMS harmonics
 F_target = 0.05;
@@ -46,7 +46,7 @@ max_corr      = 250;
 n_min_fold    = 60;
 n_max_no_fold = 140;
 thr_retro     = 0.01;
-jan_excl      = 5;
+jan_excl      = 5.0;
 
 % =========================================================================
 %  SECTION 3 — Extension E1: Local Polynomial Predictor
